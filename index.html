@@ -1,96 +1,382 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – VisualCopy AI</title>
+    <meta name="description"
+        content="Privacy Policy for VisualCopy AI – how we collect, use, store, and share information." />
+    <style>
+        :root {
+            --primary: #0077B5;
+            /* requested brand color */
+            --text: #0f172a;
+            /* slate-900 */
+            --muted: #475569;
+            /* slate-600 */
+            --bg: #f8fafc;
+            /* slate-50 */
+            --card: #ffffff;
+            --border: #e2e8f0;
+            /* slate-200 */
+            --radius: 18px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #0a66a0 100%);
+            color: #fff;
+            border-radius: var(--radius);
+            padding: 36px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+        }
+
+        .hero h1 {
+            margin: 0 0 6px;
+            font-size: clamp(28px, 4vw, 40px);
+            letter-spacing: -.3px;
+        }
+
+        .hero p {
+            margin: 6px 0 0;
+            color: #e6f4ff;
+            max-width: 700px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin: 18px 0 0;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #003a5a;
+            background: #ffffff;
+            border: 1px solid rgba(255, 255, 255, .5);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-weight: 600;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .04);
+        }
+
+        .nav a:hover {
+            background: #f0f9ff;
+        }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 22px;
+            margin-top: 22px;
+            box-shadow: 0 6px 18px rgba(2, 6, 23, .04);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin: 0 0 10px;
+            font-size: clamp(22px, 3vw, 28px);
+        }
+
+        h3 {
+            color: var(--text);
+            margin: 18px 0 8px;
+            font-size: 18px;
+        }
+
+        p,
+        li {
+            color: var(--muted);
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 700;
+            color: #075985;
+            background: #e0f2fe;
+            border: 1px solid #bae6fd;
+            padding: 2px 8px;
+            border-radius: 999px;
+            margin-left: 8px;
+            vertical-align: 3px;
+        }
+
+        .meta {
+            font-size: 13px;
+            color: white;
+            margin-top: 10px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 13px;
+            color: #64748b;
+            margin: 28px 0 60px;
+        }
+
+        a {
+            color: var(--primary);
+        }
+
+        a:focus-visible {
+            outline: 3px solid #93c5fd;
+            outline-offset: 2px;
+            border-radius: 6px;
+        }
+
+        code {
+            background: #f1f5f9;
+            padding: 2px 6px;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0b1220;
+                --text: #e5e7eb;
+                --muted: #cbd5e1;
+                --card: #0f172a;
+                --border: #1f2937;
+            }
+
+            .hero {
+                box-shadow: 0 12px 30px rgba(0, 0, 0, .4);
+            }
+
+            .nav a {
+                background: rgba(255, 255, 255, .06);
+                color: #e5f2ff;
+                border-color: rgba(255, 255, 255, .12);
+            }
+
+            .nav a:hover {
+                background: rgba(255, 255, 255, .12);
+            }
+
+            code {
+                background: #0b1220;
+                border-color: #111827;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="wrapper">
+        <header class="hero">
+            <h1>Privacy Policy</h1>
+            <p>
+                This Privacy Policy explains how <strong>VisualCopy AI</strong> ("we", "us", or "our") collects, uses,
+                and safeguards information when you use our mobile application and related services.
+            </p>
+            <nav class="nav" aria-label="On-page navigation">
+                <a href="#information-we-collect">Information We Collect</a>
+                <a href="#how-we-use">How We Use Information</a>
+                <a href="#processing">AI & Processing</a>
+                <a href="#sharing">Sharing</a>
+                <a href="#retention">Retention</a>
+                <a href="#security">Security</a>
+                <a href="#your-rights">Your Rights</a>
+                <a href="#children">Children</a>
+                <a href="#changes">Changes</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="meta">Last updated: <strong>August 31, 2025</strong></div>
+        </header>
+
+        <section id="introduction" class="card" aria-labelledby="intro-head">
+            <h2 id="intro-head">Introduction</h2>
+            <p>
+                By using VisualCopy AI, you agree to the collection and use of information in accordance with this
+                policy. If you do not agree, please do not use the app.
+            </p>
+            <p class="meta">
+                This policy is designed to help satisfy Google Play requirements, including the Data Safety section. It
+                does not constitute legal advice.
+            </p>
+        </section>
+
+        <section id="information-we-collect" class="card" aria-labelledby="collect-head">
+            <h2 id="collect-head">Information We Collect</h2>
+            <h3>1) Content You Provide</h3>
+            <ul>
+                <li><strong>Ad Images You Upload</strong> <span class="badge">Required for core feature</span> – images
+                    used to generate Primary Text, Headline, and Description.</li>
+                <li><strong>Generated Text</strong> – ad copy variations created by the app (for your history and
+                    sharing features).</li>
+            </ul>
+            <h3>2) Account & Contact Information (if you create an account)</h3>
+            <ul>
+                <li>Name, email address, password (hashed), and profile-related settings.</li>
+            </ul>
+            <h3>3) Usage & Device Information</h3>
+            <ul>
+                <li>App interactions (e.g., feature usage, regenerate events), device model, OS version, and log data.
+                </li>
+                <li>Diagnostic data to improve reliability and performance.</li>
+            </ul>
+            <h3>4) Analytics (app & website)</h3>
+            <ul>
+                <li>We may use analytics tools to understand app usage patterns (aggregated and/or pseudonymized
+                    statistics).</li>
+            </ul>
+        </section>
+
+        <section id="how-we-use" class="card" aria-labelledby="use-head">
+            <h2 id="use-head">How We Use Information</h2>
+            <ul>
+                <li>Provide core functionality: analyze your uploaded ad images and generate ad copy.</li>
+                <li>Enable features such as history, sharing, and regeneration of copy.</li>
+                <li>Maintain and improve the app, including debugging, analytics, and security monitoring.</li>
+                <li>Communicate with you about updates, security alerts, and support.</li>
+                <li>Comply with legal obligations and enforce our terms.</li>
+            </ul>
+        </section>
+
+        <section id="processing" class="card" aria-labelledby="process-head">
+            <h2 id="process-head">AI Processing & Model Providers</h2>
+            <p>
+                To generate copy from your images, VisualCopy AI processes your content on secure servers. We do
+                <strong>not</strong> sell your personal information. We do <strong>not</strong> allow third parties to
+                use your personal information for their own marketing.
+            </p>
+            <p>
+                We may engage third‑party AI or cloud providers strictly as <em>processors</em> to perform the image
+                analysis and text generation on our behalf. Where supported, we configure such providers to <strong>not
+                    use your content to train their models</strong>. If a provider’s default terms differ, we
+                contractually restrict training use or switch providers.
+            </p>
+            <p>
+                If processing outside your region is required, we implement appropriate safeguards (e.g., Standard
+                Contractual Clauses where applicable).
+            </p>
+        </section>
+
+        <section id="sharing" class="card" aria-labelledby="share-head">
+            <h2 id="share-head">When We Share Information</h2>
+            <ul>
+                <li><strong>Service Providers/Processors:</strong> hosting, analytics, error monitoring, AI inference,
+                    and customer support tools—bound by confidentiality and data processing terms.</li>
+                <li><strong>Legal & Safety:</strong> to comply with law, protect rights, or respond to lawful requests.
+                </li>
+                <li><strong>Business Transfers:</strong> in connection with a merger, acquisition, or asset sale,
+                    subject to continued protection of your data.</li>
+            </ul>
+            <p>
+                We do not share your personal information with third parties for their independent advertising or
+                marketing.
+            </p>
+        </section>
+
+        <section id="retention" class="card" aria-labelledby="retain-head">
+            <h2 id="retain-head">Data Retention</h2>
+            <p>
+                We retain personal information for as long as necessary to provide the service and for legitimate
+                business purposes (such as security, fraud prevention, and legal compliance). Where feasible, we
+                minimize, anonymize, or aggregate data.
+            </p>
+            <p>
+                You may request deletion of your account or specific content (including uploaded images and generated
+                text) by contacting us as described below.
+            </p>
+        </section>
+
+        <section id="security" class="card" aria-labelledby="security-head">
+            <h2 id="security-head">Security</h2>
+            <p>
+                We implement administrative, technical, and physical safeguards designed to protect your information,
+                including encryption in transit, access controls, and regular reviews. No method of transmission or
+                storage is 100% secure; we cannot guarantee absolute security.
+            </p>
+        </section>
+
+        <section id="your-rights" class="card" aria-labelledby="rights-head">
+            <h2 id="rights-head">Your Choices & Rights</h2>
+            <ul>
+                <li><strong>Access & Update:</strong> You may request a copy of your data or ask us to correct
+                    inaccurate information.</li>
+                <li><strong>Deletion:</strong> You can request deletion of your account and associated content, subject
+                    to legal obligations.</li>
+                <li><strong>Consent:</strong> Where consent is used as a legal basis (e.g., notifications), you can
+                    withdraw consent at any time.</li>
+                <li><strong>Regional Rights:</strong> Depending on your location, you may have additional rights under
+                    applicable data protection laws.</li>
+            </ul>
+        </section>
+
+        <section id="children" class="card" aria-labelledby="children-head">
+            <h2 id="children-head">Children’s Privacy</h2>
+            <p>
+                VisualCopy AI is intended for users aged 13 and above (or the minimum age required in your
+                jurisdiction). We do not knowingly collect personal information from children under the applicable age.
+                If you believe a child has provided us information, please contact us so we can delete it.
+            </p>
+        </section>
+
+        <section id="international" class="card" aria-labelledby="intl-head">
+            <h2 id="intl-head">International Transfers</h2>
+            <p>
+                Your information may be processed in countries other than your own. Where required, we rely on
+                appropriate safeguards for cross‑border transfers.
+            </p>
+        </section>
+
+        <section id="changes" class="card" aria-labelledby="changes-head">
+            <h2 id="changes-head">Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. We will post the revised version with a new “Last
+                updated” date and, where appropriate, notify you through the app or by email.
+            </p>
+        </section>
+
+        <section id="contact" class="card" aria-labelledby="contact-head">
+            <h2 id="contact-head">Contact Us</h2>
+            <p>
+                If you have questions or requests related to privacy, data access, or deletion, contact us at:
+            </p>
+            <p>
+                <strong>Email:</strong> <a href="mailto: waylogne19@gmail.com"> waylogne19@gmail.com</a><br>
+
+            </p>
+
+        </section>
+
+        <footer class="footer">
+            © <span id="year"></span> VisualCopy AI. All rights reserved.
+        </footer>
+    </main>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
 </html>
