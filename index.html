@@ -10,7 +10,7 @@
     <style>
         :root {
             --primary: #0077B5;
-            /* requested brand color */
+            /* brand color */
             --text: #0f172a;
             /* slate-900 */
             --muted: #475569;
@@ -24,7 +24,7 @@
         }
 
         * {
-            box-sizing: border-box;
+            box-sizing: border-box
         }
 
         html,
@@ -40,7 +40,7 @@
         .wrapper {
             max-width: 950px;
             margin: 40px auto;
-            padding: 0 20px;
+            padding: 0 20px
         }
 
         .hero {
@@ -48,26 +48,26 @@
             color: #fff;
             border-radius: var(--radius);
             padding: 36px;
-            box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .08)
         }
 
         .hero h1 {
             margin: 0 0 6px;
             font-size: clamp(28px, 4vw, 40px);
-            letter-spacing: -.3px;
+            letter-spacing: -.3px
         }
 
         .hero p {
             margin: 6px 0 0;
             color: #e6f4ff;
-            max-width: 700px;
+            max-width: 700px
         }
 
         .nav {
             display: flex;
             gap: 14px;
             flex-wrap: wrap;
-            margin: 18px 0 0;
+            margin: 18px 0 0
         }
 
         .nav a {
@@ -78,11 +78,17 @@
             padding: 8px 12px;
             border-radius: 999px;
             font-weight: 600;
-            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .04);
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .04)
         }
 
         .nav a:hover {
-            background: #f0f9ff;
+            background: #f0f9ff
+        }
+
+        .meta {
+            font-size: 13px;
+            color: white;
+            margin-top: 10px
         }
 
         .card {
@@ -91,28 +97,28 @@
             border-radius: var(--radius);
             padding: 22px;
             margin-top: 22px;
-            box-shadow: 0 6px 18px rgba(2, 6, 23, .04);
+            box-shadow: 0 6px 18px rgba(2, 6, 23, .04)
         }
 
         h2 {
             color: var(--primary);
             margin: 0 0 10px;
-            font-size: clamp(22px, 3vw, 28px);
+            font-size: clamp(22px, 3vw, 28px)
         }
 
         h3 {
             color: var(--text);
             margin: 18px 0 8px;
-            font-size: 18px;
+            font-size: 18px
         }
 
         p,
         li {
-            color: var(--muted);
+            color: var(--muted)
         }
 
         ul {
-            padding-left: 18px;
+            padding-left: 18px
         }
 
         .badge {
@@ -125,37 +131,47 @@
             padding: 2px 8px;
             border-radius: 999px;
             margin-left: 8px;
-            vertical-align: 3px;
+            vertical-align: 3px
         }
 
-        .meta {
-            font-size: 13px;
-            color: white;
-            margin-top: 10px;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px
+        }
+
+        .pill {
+            display: inline-block;
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 2px 10px;
+            font-size: 12px;
+            color: #334155;
+            background: #f8fafc
         }
 
         .footer {
             text-align: center;
             font-size: 13px;
             color: #64748b;
-            margin: 28px 0 60px;
+            margin: 28px 0 60px
         }
 
         a {
-            color: var(--primary);
+            color: var(--primary)
         }
 
         a:focus-visible {
             outline: 3px solid #93c5fd;
             outline-offset: 2px;
-            border-radius: 6px;
+            border-radius: 6px
         }
 
         code {
             background: #f1f5f9;
             padding: 2px 6px;
             border-radius: 6px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #e2e8f0
         }
 
         @media (prefers-color-scheme: dark) {
@@ -164,26 +180,31 @@
                 --text: #e5e7eb;
                 --muted: #cbd5e1;
                 --card: #0f172a;
-                --border: #1f2937;
+                --border: #1f2937
             }
 
             .hero {
-                box-shadow: 0 12px 30px rgba(0, 0, 0, .4);
+                box-shadow: 0 12px 30px rgba(0, 0, 0, .4)
             }
 
             .nav a {
                 background: rgba(255, 255, 255, .06);
                 color: #e5f2ff;
-                border-color: rgba(255, 255, 255, .12);
+                border-color: rgba(255, 255, 255, .12)
             }
 
             .nav a:hover {
-                background: rgba(255, 255, 255, .12);
+                background: rgba(255, 255, 255, .12)
             }
 
             code {
                 background: #0b1220;
-                border-color: #111827;
+                border-color: #111827
+            }
+
+            .pill {
+                background: #0b1220;
+                color: #cbd5e1
             }
         }
     </style>
@@ -193,180 +214,210 @@
     <main class="wrapper">
         <header class="hero">
             <h1>Privacy Policy</h1>
-            <p>
-                This Privacy Policy explains how <strong>VisualCopy AI</strong> ("we", "us", or "our") collects, uses,
-                and safeguards information when you use our mobile application and related services.
-            </p>
+            <p>This Privacy Policy explains how <strong>VisualCopy AI</strong> (“we”, “us”, “our”) collects, uses, and
+                safeguards information when you use the VisualCopy AI – Ad Text Assistant mobile application (the
+                “App”).</p>
             <nav class="nav" aria-label="On-page navigation">
+                <a href="#datasafety">Data Safety (Google Play)</a>
                 <a href="#information-we-collect">Information We Collect</a>
                 <a href="#how-we-use">How We Use Information</a>
-                <a href="#processing">AI & Processing</a>
-                <a href="#sharing">Sharing</a>
+                <a href="#third-parties">Third-Party Services</a>
                 <a href="#retention">Retention</a>
                 <a href="#security">Security</a>
+                <a href="#sharing">Sharing</a>
+                <a href="#permissions">App Permissions</a>
                 <a href="#your-rights">Your Rights</a>
                 <a href="#children">Children</a>
                 <a href="#changes">Changes</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <div class="meta">Last updated: <strong>August 31, 2025</strong></div>
+            <div class="meta">
+                Effective Date: <strong>August 26, 2025</strong> · Last Updated: <strong>September 1, 2025</strong>
+            </div>
         </header>
 
-        <section id="introduction" class="card" aria-labelledby="intro-head">
+        <section id="intro" class="card" aria-labelledby="intro-head">
             <h2 id="intro-head">Introduction</h2>
-            <p>
-                By using VisualCopy AI, you agree to the collection and use of information in accordance with this
-                policy. If you do not agree, please do not use the app.
-            </p>
-            <p class="meta">
-                This policy is designed to help satisfy Google Play requirements, including the Data Safety section. It
-                does not constitute legal advice.
-            </p>
+            <p>By using the App, you agree to the collection and use of information in accordance with this policy. If
+                you do not agree, please do not use the App.</p>
+            <p class="meta">This policy is structured to satisfy Google Play requirements, including Data Safety
+                disclosures. It does not constitute legal advice.</p>
+        </section>
+
+        <section id="datasafety" class="card" aria-labelledby="ds-head">
+            <h2 id="ds-head">Data Safety (Google Play Summary)</h2>
+            <div class="grid">
+                <div>
+                    <h3>Data Collected</h3>
+                    <ul>
+                        <li><strong>Personal info:</strong> email (account & support)</li>
+                        <li><strong>Financial info:</strong> payment intent details via Stripe <em>(we don’t store full
+                                card data)</em></li>
+                        <li><strong>App activity & diagnostics:</strong> feature usage, logs, crash reports</li>
+                        <li><strong>User content:</strong> images you upload; AI-generated text</li>
+                        <li><strong>Device info:</strong> model, OS version</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Data Sharing</h3>
+                    <p>We do <strong>not</strong> sell or rent personal data. Data is shared only with service providers
+                        acting as processors to operate the App (e.g., hosting, analytics, payments, AI inference).</p>
+                    <p class="pill">No third-party advertising</p>
+                </div>
+                <div>
+                    <h3>Security & Deletion</h3>
+                    <ul>
+                        <li>Data encrypted in transit (HTTPS) and at rest (Firebase)</li>
+                        <li>Account & content deletion available upon request (see <a href="#your-rights">Your
+                                Rights</a>)</li>
+                        <li>Minimum age: 13+</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <section id="information-we-collect" class="card" aria-labelledby="collect-head">
-            <h2 id="collect-head">Information We Collect</h2>
-            <h3>1) Content You Provide</h3>
+            <h2 id="collect-head">1. Information We Collect</h2>
+
+            <h3>a) Personal Information</h3>
             <ul>
-                <li><strong>Ad Images You Upload</strong> <span class="badge">Required for core feature</span> – images
-                    used to generate Primary Text, Headline, and Description.</li>
-                <li><strong>Generated Text</strong> – ad copy variations created by the app (for your history and
-                    sharing features).</li>
+                <li><strong>Email address</strong> (account creation, authentication, support)</li>
+                <li><strong>Payment information</strong> processed securely by <em>Stripe</em>; we do not store full
+                    card numbers on our servers.</li>
             </ul>
-            <h3>2) Account & Contact Information (if you create an account)</h3>
+
+            <h3>b) Usage & Diagnostics</h3>
             <ul>
-                <li>Name, email address, password (hashed), and profile-related settings.</li>
-            </ul>
-            <h3>3) Usage & Device Information</h3>
-            <ul>
-                <li>App interactions (e.g., feature usage, regenerate events), device model, OS version, and log data.
+                <li>App interactions (e.g., feature usage, regenerate events), session data, device model, OS version
                 </li>
-                <li>Diagnostic data to improve reliability and performance.</li>
+                <li>Crash and performance logs (e.g., via Firebase services) to improve reliability</li>
             </ul>
-            <h3>4) Analytics (app & website)</h3>
+
+            <h3>c) Uploaded Content</h3>
             <ul>
-                <li>We may use analytics tools to understand app usage patterns (aggregated and/or pseudonymized
-                    statistics).</li>
+                <li><strong>Images you upload</strong> for AI analysis and ad-copy generation <span class="badge">core
+                        feature</span></li>
+                <li><strong>AI-generated outputs</strong> (primary text, headline, description). Stored in your account
+                    if needed for app functionality (e.g., history, edit/share).</li>
             </ul>
         </section>
 
         <section id="how-we-use" class="card" aria-labelledby="use-head">
-            <h2 id="use-head">How We Use Information</h2>
+            <h2 id="use-head">2. How We Use Your Information</h2>
             <ul>
-                <li>Provide core functionality: analyze your uploaded ad images and generate ad copy.</li>
-                <li>Enable features such as history, sharing, and regeneration of copy.</li>
-                <li>Maintain and improve the app, including debugging, analytics, and security monitoring.</li>
-                <li>Communicate with you about updates, security alerts, and support.</li>
-                <li>Comply with legal obligations and enforce our terms.</li>
+                <li>Provide, operate, and improve the App’s core functionality (image analysis → ad text generation)
+                </li>
+                <li>Enable features such as history, copy regeneration, and sharing</li>
+                <li>Process payments and manage subscriptions (via Stripe)</li>
+                <li>Communicate about updates, support, and security issues</li>
+                <li>Monitor usage for analytics, performance, and fraud prevention</li>
+                <li>Comply with legal obligations and enforce our terms</li>
             </ul>
         </section>
 
-        <section id="processing" class="card" aria-labelledby="process-head">
-            <h2 id="process-head">AI Processing & Model Providers</h2>
-            <p>
-                To generate copy from your images, VisualCopy AI processes your content on secure servers. We do
-                <strong>not</strong> sell your personal information. We do <strong>not</strong> allow third parties to
-                use your personal information for their own marketing.
-            </p>
-            <p>
-                We may engage third‑party AI or cloud providers strictly as <em>processors</em> to perform the image
-                analysis and text generation on our behalf. Where supported, we configure such providers to <strong>not
-                    use your content to train their models</strong>. If a provider’s default terms differ, we
-                contractually restrict training use or switch providers.
-            </p>
-            <p>
-                If processing outside your region is required, we implement appropriate safeguards (e.g., Standard
-                Contractual Clauses where applicable).
-            </p>
+        <section id="third-parties" class="card" aria-labelledby="third-head">
+            <h2 id="third-head">3. Third-Party Services (Processors)</h2>
+            <p>We use trusted providers to run the App. They process data on our behalf under data-processing terms:</p>
+            <ul>
+                <li><strong>Firebase</strong> (Authentication, Storage, Analytics) — <a
+                        href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy</a>
+                </li>
+                <li><strong>Stripe</strong> (Payments) — <a href="https://stripe.com/privacy" target="_blank"
+                        rel="noopener">Privacy</a></li>
+                <li><strong>OpenAI API</strong> (AI text generation) — <a
+                        href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy</a>
+                </li>
+                <li><strong>SendGrid</strong> / <strong>Resend</strong> (email delivery) — <a
+                        href="https://sendgrid.com/policies/privacy/" target="_blank" rel="noopener">SendGrid
+                        Privacy</a> / <a href="https://resend.com/privacy-policy" target="_blank" rel="noopener">Resend
+                        Privacy</a></li>
+            </ul>
+            <p>Where supported, we configure providers so your content is <strong>not used to train</strong> their
+                models. We do not allow providers to use your information for their independent advertising.</p>
         </section>
 
         <section id="sharing" class="card" aria-labelledby="share-head">
-            <h2 id="share-head">When We Share Information</h2>
+            <h2 id="share-head">4. Data Sharing</h2>
             <ul>
-                <li><strong>Service Providers/Processors:</strong> hosting, analytics, error monitoring, AI inference,
-                    and customer support tools—bound by confidentiality and data processing terms.</li>
-                <li><strong>Legal & Safety:</strong> to comply with law, protect rights, or respond to lawful requests.
+                <li><strong>Service Providers:</strong> hosting, analytics, error monitoring, AI inference, customer
+                    support (bound by confidentiality and processor terms)</li>
+                <li><strong>Legal/Safety:</strong> to comply with law, protect rights, or respond to lawful requests
                 </li>
-                <li><strong>Business Transfers:</strong> in connection with a merger, acquisition, or asset sale,
-                    subject to continued protection of your data.</li>
+                <li><strong>Business Transfers:</strong> if we undergo a merger, acquisition, or asset sale, subject to
+                    continued protection of your data</li>
             </ul>
-            <p>
-                We do not share your personal information with third parties for their independent advertising or
-                marketing.
-            </p>
+            <p>We do not sell personal information and we do not share it with third parties for their independent
+                marketing.</p>
         </section>
 
         <section id="retention" class="card" aria-labelledby="retain-head">
-            <h2 id="retain-head">Data Retention</h2>
-            <p>
-                We retain personal information for as long as necessary to provide the service and for legitimate
-                business purposes (such as security, fraud prevention, and legal compliance). Where feasible, we
-                minimize, anonymize, or aggregate data.
-            </p>
-            <p>
-                You may request deletion of your account or specific content (including uploaded images and generated
-                text) by contacting us as described below.
-            </p>
+            <h2 id="retain-head">5. Data Storage & Retention</h2>
+            <ul>
+                <li>Data is stored in Firebase (Firestore/Cloud Storage). Data is encrypted in transit and at rest.</li>
+                <li><strong>User content</strong> (uploads & generated text) is retained as needed to provide features
+                    (e.g., history) and until you delete it or delete your account.</li>
+                <li><strong>Diagnostics</strong> (logs/crashes) are retained for a limited period to improve stability
+                    and security.</li>
+                <li><strong>Payment records</strong> are retained as required by law and accounting rules.</li>
+            </ul>
         </section>
 
         <section id="security" class="card" aria-labelledby="security-head">
-            <h2 id="security-head">Security</h2>
-            <p>
-                We implement administrative, technical, and physical safeguards designed to protect your information,
-                including encryption in transit, access controls, and regular reviews. No method of transmission or
-                storage is 100% secure; we cannot guarantee absolute security.
+            <h2 id="security-head">6. Security</h2>
+            <p>We implement administrative, technical, and physical safeguards designed to protect your information,
+                including encryption, access controls, and regular reviews. No method of transmission or storage is 100%
+                secure.</p>
+        </section>
+
+        <section id="permissions" class="card" aria-labelledby="perm-head">
+            <h2 id="perm-head">7. App Permissions</h2>
+            <ul>
+                <li><strong>Photos/Media/Files</strong> — to select and upload images for AI analysis <span
+                        class="badge">required for core feature</span></li>
+                <li><strong>Camera</strong> (if used) — to capture images directly in-app (optional alternative to
+                    gallery)</li>
+                <li><strong>Network Access</strong> — to connect to our servers and third-party processors</li>
+            </ul>
+            <p>You can manage permissions in your device settings. Denying required permissions may limit functionality.
             </p>
         </section>
 
         <section id="your-rights" class="card" aria-labelledby="rights-head">
-            <h2 id="rights-head">Your Choices & Rights</h2>
+            <h2 id="rights-head">8. Your Rights & Choices</h2>
             <ul>
-                <li><strong>Access & Update:</strong> You may request a copy of your data or ask us to correct
-                    inaccurate information.</li>
-                <li><strong>Deletion:</strong> You can request deletion of your account and associated content, subject
-                    to legal obligations.</li>
-                <li><strong>Consent:</strong> Where consent is used as a legal basis (e.g., notifications), you can
-                    withdraw consent at any time.</li>
+                <li><strong>Access/Update:</strong> Request a copy of your data or corrections to inaccurate
+                    information.</li>
+                <li><strong>Delete Content/Account:</strong> You can request deletion of uploaded images, generated
+                    text, and/or your account. See contact below.</li>
+                <li><strong>Consent:</strong> Where consent is used (e.g., email updates), you may withdraw consent at
+                    any time.</li>
                 <li><strong>Regional Rights:</strong> Depending on your location, you may have additional rights under
                     applicable data protection laws.</li>
             </ul>
         </section>
 
         <section id="children" class="card" aria-labelledby="children-head">
-            <h2 id="children-head">Children’s Privacy</h2>
-            <p>
-                VisualCopy AI is intended for users aged 13 and above (or the minimum age required in your
-                jurisdiction). We do not knowingly collect personal information from children under the applicable age.
-                If you believe a child has provided us information, please contact us so we can delete it.
-            </p>
+            <h2 id="children-head">9. Children’s Privacy</h2>
+            <p>The App is not intended for children under 13 (or 16 in some jurisdictions). We do not knowingly collect
+                data from children. If you believe a child has provided information, contact us so we can delete it.</p>
         </section>
 
         <section id="international" class="card" aria-labelledby="intl-head">
-            <h2 id="intl-head">International Transfers</h2>
-            <p>
-                Your information may be processed in countries other than your own. Where required, we rely on
-                appropriate safeguards for cross‑border transfers.
-            </p>
+            <h2 id="intl-head">10. International Transfers</h2>
+            <p>Your information may be processed in countries other than your own. Where required, we rely on
+                appropriate safeguards (e.g., standard contractual clauses) for cross-border transfers.</p>
         </section>
 
         <section id="changes" class="card" aria-labelledby="changes-head">
-            <h2 id="changes-head">Changes to This Policy</h2>
-            <p>
-                We may update this Privacy Policy from time to time. We will post the revised version with a new “Last
-                updated” date and, where appropriate, notify you through the app or by email.
-            </p>
+            <h2 id="changes-head">11. Changes to This Privacy Policy</h2>
+            <p>We may update this policy from time to time. We will post the revised version with an updated “Last
+                Updated” date and, where appropriate, notify you via the App or email.</p>
         </section>
 
         <section id="contact" class="card" aria-labelledby="contact-head">
-            <h2 id="contact-head">Contact Us</h2>
-            <p>
-                If you have questions or requests related to privacy, data access, or deletion, contact us at:
-            </p>
-            <p>
-                <strong>Email:</strong> <a href="mailto: waylogne19@gmail.com"> waylogne19@gmail.com</a><br>
-
-            </p>
-
+            <h2 id="contact-head">12. Contact Us</h2>
+            <p>If you have questions or want to make a data request (access, export, deletion), contact:</p>
+            <p><strong>Email:</strong> <a href="mailto:waylogne19@gmail.com">waylogne19@gmail.com</a></p>
         </section>
 
         <footer class="footer">
